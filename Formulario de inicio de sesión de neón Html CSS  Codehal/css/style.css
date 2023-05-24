@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?famili=Poppins:wght@300;400;500,600;700;800;900& display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    height: 100vh;
+    background: #000000
+}
+
+@keyframes cambiar {
+    0% {
+        background-position: 0 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0 50%;
+    }
+}
+
+.wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: auto;
+    background: transparent;
+    border: 5px solid #333333;
+    border-radius: 10px;
+    transition: .5s;
+}
+
+.wrapper:hover {
+    border: 5px solid #00eeff;
+    box-shadow: 0 0 20px #00ee55, inset 0 0 20px #00eecc;
+}
+
+h2 {
+    font-size: 2em;
+    text-align: center;
+    color: #ffffff;
+    margin: 30px 0;
+}
+
+.wrapper:hover h2 {
+    color: #00eeff;
+}
+
+.input-box {
+    position: relative;
+    width: 320px;
+    margin: 30px 0;
+}
+
+.input-box input {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #333333;
+    outline: none;
+    border-radius: 5px;
+    font-size: 1em;
+    color: #ffffff;
+    padding: 0 10px 0 35px;
+    transition: .5s;
+}
+
+.wrapper:hover .input-box input {
+    border: 2px solid #00eeff;
+    box-shadow: 0 0 10px #00eeff, inset 0 0 10px #00eeff;
+}
+
+.input-box input::placeholder {
+    color: #ffffff4d;
+}
+
+.input-box .icon {
+    position: absolute;
+    left: 10px;
+    color: #ffffff;
+    font-size: 1.2em;
+    line-height: 55px;
+    transition: .5s;
+}
+
+.wrapper:hover .input-box .icon {
+    color: #00eeff;
+}
+
+.forgot-pass {
+    margin: -15px 0 15px;
+}
+
+.forgot-pass a {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-size: .9em;
+    text-decoration: none;
+}
+
+.forgot-pass a:hover {
+    text-decoration: underline;
+}
+
+button {
+    position: relative;
+    width: 100%;
+    height: 45px;
+    background: #333333;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #ffffff;
+    font-weight: 500;
+    transition: .5s;
+}
+
+.wrapper:hover button {
+    background: #00eeff;
+    color: #000000;
+    box-shadow: #00eeff;
+}
+
+.registro-link {
+    font-size: .9em;
+    text-align: center;
+    margin: 25px 0;
+}
+
+.registro-link p {
+    color: #ffffff;
+}
+
+.registro-link p a {
+    color: #333333;
+    text-decoration: none;
+    font-weight: 600;
+    transition: .5s;
+}
+
+.wrapper:hover .registro-link p a {
+    color: #00eeff;
+}
+
+.registro-link p a:hover {
+    text-decoration: underline;
+}

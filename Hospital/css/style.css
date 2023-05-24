@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+}
+
+body {
+    background-color: #fff;
+}
+
+/*-----inicio del menu-----*/
+
+.header {
+    /*
+    width: 100%;
+    margin: auto;
+    */
+    background-color: rgb(65, 169, 255, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: auto;
+    width: auto;
+    padding: 15px 10%;
+    word-spacing: 5px;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.logo img {
+    height: 70px;
+    width: auto;
+    transition: 1s;
+}
+
+.logo img:hover {
+    transform: scale(1.1);
+}
+
+.menu {
+    list-style: none;
+}
+
+.menu > li {
+    display: inline-block;
+}
+
+.menu > li > a {
+    display: block;
+    padding: 15px;
+    color: rgb(255, 255, 255, 0.8);
+    text-decoration: none;
+    transition: 1s;
+}
+
+.menu > li > a:hover {
+    color: #000;
+    transform: scale(1.1);
+    border-radius: 10px;
+    background: #fff
+}
+
+/*-----fin del menu-----*/
+/*-----inicio del sub-menu*/
+
+.sub-menu {
+    display: none;
+    position: absolute;
+    list-style: none;
+    border-radius: 10px;
+    background: rgb(65, 169, 255, 0.8);
+    width: 160px;
+    left: 1095px;
+    top: 80px;
+    padding: 15px 15px;
+}
+
+.sub-menu li a {
+    display: block;
+    padding: 15px;
+    color: rgb(255, 255, 255, 0.8);
+    text-decoration: none;
+    margin-top: 3px;
+    transition: 1s;
+    width: 100%;
+    font-size: 15px;
+}
+
+.sub-menu li a:hover {
+    display: block;
+    color: #000;
+    transform: scale(1.2);
+    border-radius: 10px;
+    background: #ffffff;
+    
+}
+
+.menu li:hover>.sub-menu {
+    display: block;
+}
+
+/*-----fin del sub-menu-----*/
+/*-----inicio de slaider-----*/

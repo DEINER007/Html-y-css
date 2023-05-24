@@ -1,0 +1,207 @@
+body {
+    background: #000;
+}
+
+h2 {
+    background-color: rgba(0, 127, 255, 0.5);
+    box-shadow: 0 2px 20px #666;
+    padding: 0.25em;
+}
+
+div.espacio3D-1 {
+    width: 300px;
+    height: 300px;
+    margin: 3em auto 0 auto;
+    position: relative;
+    perspective-origin: center -50%;
+    perspective: 500px;
+    transform: scale(0.75);
+}
+
+div.cubo3D-1 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    transform: translateZ(-150px);
+    animation-name: gira;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+div.base {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background-color: rgba(0, 0, 0, 0.15);
+    transform: translateX(75px) translateY(75px) rotateX(90deg) translateZ(-200px);
+    box-shadow: 0 0 50px 100px rgba(0, 0, 0, 0.15);
+}
+
+aside.cara {
+    position: absolute;
+    width: 298px;
+    height: 298px;
+    font-size: 3em;
+    text-align: center;
+    line-height: 298px;
+}
+
+aside.cara1 {
+    /* Frente */
+    transform: translateZ(150px);
+    background-color: rgba(10, 33, 238, 0.918);
+    border: 1px solid rgba(10, 33, 238, 0.918);
+    box-shadow: 0px 0px 5px rgba(10, 33, 238, 0.918);
+}
+
+aside.cara2 {
+    /* Atrás */
+    transform: rotateY(180deg) translateZ(150px);
+    background-color: rgba(10, 238, 67, 0.918);
+    border: 1px solid rgba(10, 238, 67, 0.918);
+    box-shadow: 0px 0px 5px rgba(10, 238, 67, 0.918);
+}
+
+aside.cara3 {
+    /* Izquierda */
+    transform: rotateY(-90deg) translateZ(150px);
+    background-color: rgba(255, 136, 0, 0.918);
+    border: 1px solid rgba(255, 136, 0, 0.918);
+    box-shadow: 0px 0px 5px rgba(255, 136, 0, 0.918);
+}
+
+aside.cara4 {
+    /* derecha */
+    transform: rotateY(90deg) translateZ(150px);
+    background-color: rgba(238, 10, 10, 0.918);
+    border: 1px solid rgba(238, 10, 10, 0.918);
+    box-shadow: 0px 0px 5px rgba(238, 10, 10, 0.918);
+}
+
+aside.cara5 {
+    /* abajo */
+    transform: rotateX(-90deg) translateZ(150px);
+    background-color: rgba(234, 238, 10, 0.918);
+    border: 1px solid rgba(234, 238, 10, 0.918);
+    box-shadow: 0px 0px 5px rgba(234, 238, 10, 0.918);
+}
+
+aside.cara6 {
+    /* arriba */
+    transform: rotateX(90deg) translateZ(150px);
+    background-color: rgba(234, 235, 240, 0.918);
+    border: 1px solid rgba(234, 235, 240, 0.918);
+    box-shadow: 0px 0px 5px rgba(234, 235, 240, 0.918);
+}
+
+@keyframes gira {
+    0% {
+        transform: translateZ(-150px) rotateY(0deg);
+    }
+
+    100% {
+        transform: translateZ(-150px) rotateY(360deg);
+    }
+}
+/*-----------------------------*/
+div.espacio3D-2 {
+    width: 15px;
+    height: 500px;
+    margin: 3em auto 0 auto;
+    position: relative;
+    perspective-origin: center -50%;
+    perspective: 500px;
+    transform: scale(0.75);
+}
+
+div.cubo3D {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    transform: translateZ(-150px);
+    animation-name: gira;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+div.base {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background-color: rgba(0, 0, 0, 0.15);
+    transform: translateX(75px) translateY(75px) rotateX(90deg) translateZ(-200px);
+    box-shadow: 0 0 50px 100px rgba(0, 0, 0, 0.15);
+}
+
+aside.cara {
+    position: absolute;
+    width: 298px;
+    height: 298px;
+    font-size: 3em;
+    text-align: center;
+    line-height: 298px;
+}
+
+aside.cara1 {
+    /* Frente */
+    transform: translateZ(150px);
+    background-color: rgba(10, 33, 238, 0.918);
+    border: 1px solid rgba(10, 33, 238, 0.918);
+    box-shadow: 0px 0px 5px rgba(10, 33, 238, 0.918);
+}
+
+aside.cara2 {
+    /* Atrás */
+    transform: rotateY(180deg) translateZ(150px);
+    background-color: rgba(10, 238, 67, 0.918);
+    border: 1px solid rgba(10, 238, 67, 0.918);
+    box-shadow: 0px 0px 5px rgba(10, 238, 67, 0.918);
+}
+
+aside.cara3 {
+    /* Izquierda */
+    transform: rotateY(-90deg) translateZ(150px);
+    background-color: rgba(255, 136, 0, 0.918);
+    border: 1px solid rgba(255, 136, 0, 0.918);
+    box-shadow: 0px 0px 5px rgba(255, 136, 0, 0.918);
+}
+
+aside.cara4 {
+    /* derecha */
+    transform: rotateY(90deg) translateZ(150px);
+    background-color: rgba(238, 10, 10, 0.918);
+    border: 1px solid rgba(238, 10, 10, 0.918);
+    box-shadow: 0px 0px 5px rgba(238, 10, 10, 0.918);
+}
+
+aside.cara5 {
+    /* abajo */
+    transform: rotateX(-90deg) translateZ(150px);
+    background-color: rgba(234, 238, 10, 0.918);
+    border: 1px solid rgba(234, 238, 10, 0.918);
+    box-shadow: 0px 0px 5px rgba(234, 238, 10, 0.918);
+}
+
+aside.cara6 {
+    /*arriba*/
+    background-color: rgba(234, 235, 240, 0.918);
+    border: 1px solid rgba(234, 235, 240, 0.918);
+    box-shadow: 0px 0px 5px rgba(234, 235, 240, 0.918);
+    transform: rotateX(90deg) translateZ(150px);
+    -webkit-transform: rotateX(90deg) translateZ(150px);
+    -moz-transform: rotateX(90deg) translateZ(150px);
+    -ms-transform: rotateX(90deg) translateZ(150px);
+    -o-transform: rotateX(90deg) translateZ(150px);
+}
+
+@keyframes gira {
+    0% {
+        transform: translateZ(-150px) rotateY(0deg);
+    }
+
+    100% {
+        transform: translateZ(-150px) rotateY(360deg);
+    }
+}

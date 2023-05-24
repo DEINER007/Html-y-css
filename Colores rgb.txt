@@ -1,0 +1,18 @@
+#ffffff blanco
+#000000 negro
+#333333 gris
+#ffffff4d gris claro
+#00eeff azul cielo
+#00eeaa mescla de 50% azul cielo + 50% verde
+#00eecc mescla de 70% azul cielo + 30% verde
+#00ee55 verde
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
